@@ -1,6 +1,6 @@
-# ObservableDataServices
+# Angular Architecture
 
-Angular application using the concepts of Smart & Presentational components and Observable Data Services.
+Angular application using the concepts of Smart & Presentational components and Observable Data Services for a scalable architecture of a project.
 
 It's using json-sever for a fake API.
 
