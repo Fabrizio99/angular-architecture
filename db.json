@@ -1,0 +1,10 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Fabrizio Raul",
+            "lastName": "Condori  Guzman",
+            "age": 20
+        }
+    ]
+}
