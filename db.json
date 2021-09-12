@@ -1,10 +1,18 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Fabrizio Raul",
-            "lastName": "Condori  Guzman",
-            "age": 20
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "Fabrizio Raul",
+      "lastName": "Condori  Guzman",
+      "age": 19,
+      "active": false
+    },
+    {
+      "name": "Pedro",
+      "lastName": "Gonzales",
+      "age": 40,
+      "active": false,
+      "id": "f1NvmnA"
+    }
+  ]
 }

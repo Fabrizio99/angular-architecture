@@ -1,1 +1,26 @@
-<p>user-list works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Status</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of userList; let i=index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{user.name}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.active?'Activo':'Inactivo'}}</td>
+      <td>
+        <a class="link-primary" (click)="select.emit(user)">Edit</a>
+        |
+        <a class="link-primary" (click)="delete.emit(user)">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

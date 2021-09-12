@@ -1,1 +1,22 @@
-<app-user-list></app-user-list>
+<div class="container">
+    <div class="row">
+        <h1>Users</h1>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-12 col-md-7">
+            <app-user-list
+                [userList]="(userList$ | async)!"
+                (select)="selectUser($event)"
+                (delete)="deleteUser($event)"
+            ></app-user-list>
+        </div>
+        <div class="col-12 col-md-5">
+            <app-user-form
+                [user]="selectedUser$ | async"
+                (save)="saveUser($event)"
+                (cancel)="resetForm()"
+            ></app-user-form>
+        </div>
+    </div>
+</div>
